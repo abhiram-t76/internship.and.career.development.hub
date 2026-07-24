@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:5000/api/skills";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/skills`;
 const getConfig = () => ({
   headers: {
     Authorization: `Bearer ${localStorage.getItem("token")}`,
